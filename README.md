@@ -1,2 +1,2 @@
-# Python-Exercises
+# Python-Learning
 Funny python exercises to learn
