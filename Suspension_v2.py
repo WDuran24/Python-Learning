@@ -2,11 +2,11 @@ import pandas as pd
 import datetime as dt
 
 # Cargar los archivos csv en dataframes
-suspension = pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\Suspension 202304.csv"),sep=";",encoding='latin-1')
-reanudacion = pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\Reanudacion 202304.csv"),sep=";",encoding='latin-1')
-dx_voluntarias = pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\DX Voluntarias 202304.csv"),sep=";",encoding='latin-1')
-dx_mora = pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\DX por Mora 202304.csv"),sep=";",encoding='latin-1')
-dotacion= pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\Dotacion Abril.csv"),sep=";",encoding='latin-1')
+suspension = pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\Suspension 202305.csv"),sep=";",encoding='latin-1')
+reanudacion = pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\Reanudacion 202305.csv"),sep=";",encoding='latin-1')
+dx_voluntarias = pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\DX Voluntarias 202305.csv"),sep=";",encoding='latin-1')
+dx_mora = pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\DX por Mora 202305.csv"),sep=";",encoding='latin-1')
+dotacion= pd.read_csv((r"C:\Users\wduran\VTR GlobalCom S.A\Nicoll Constanza Aguirre Diaz - dcabello\ARPU Flujo\Suspension Transitoria\Consolidado Suspensiones Inputs\Dotacion_Mayo_2023.csv"),sep=";",encoding='latin-1')
 
 # Renombrar columna ID_ANDES de archivo de dotacion
 dotacion=dotacion.rename(columns={'ID_ANDES': 'INGRESADOR'})
@@ -44,3 +44,4 @@ resultado_final.drop('_merge', axis=1, inplace=True)
 
 # Guardar el resultado final en un archivo csv
 resultado_final.to_excel('/Users/wduran/VTR GlobalCom S.A/Nicoll Constanza Aguirre Diaz - dcabello/ARPU Flujo/Suspension Transitoria/Consolidado Suspensiones Outputs/Suspensiones Consolidadas Output.xlsx', index=False)
+
