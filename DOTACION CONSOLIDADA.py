@@ -22,4 +22,5 @@ merged_df = ini_completas_df.merge(
 )
 
 # Guardar el resultado en un nuevo archivo CSV
-merged_df.to_csv(r'C:\Users\wduran\Downloads\Resultado_Join.csv', index=False,sep=';')
+merged_df.to_csv(r'C:\Users\wduran\Downloads\Inhibiciones Completas.csv', index=False,sep=';')
+
